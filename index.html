@@ -2,38 +2,75 @@
 <!--This template was created by Mike-->
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css" media="screen">
+	<link rel="stylesheet" href="css/styleprint.css" media="print">
 	<title>Forward Fitness Club</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 </head>
 
 <body>	
 	<div id="container">
 	<header>
-		<a href="index.html"><img src="images/ffc_logo.png" alt="company logo" height="275" width="845"></a>
+		<a href="index.html"><img src="images/ffc_logo.png" alt="company logo"></a>
 	</header>
 	
-	<!-- use the nav area to add hyperlinks to other pages within the website-->
+	<!-- use the nav area to add hyperlinks to other pages within the website -->
 	<nav>
-		<a href="index.html">Home<a> &nbsp;&nbsp;
-		<a href="about.html">About Us<a> &nbsp;&nbsp;
-		<a href="class.html">Classes<a> &nbsp;&nbsp;
-		<a href="nutrition.html">Nutrition<a> &nbsp;&nbsp;
-		<a href="contact.html">Contact Us<a>
-		
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="class.html">Classes</a></li>
+			<li><a href="nutrition.html">Nutrition</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
 	</nav>
 	
+	<!--Home page banner -->
+	<div id="banner" class="desktop">
+		<img src="images/homeBanner.jpg" alt="home banner image">
+		
+		
 	
-	<!-- use the main area to add main content of the page-->
+	
+	
+	</div>
+	
+	<!-- use the main area to add main content of the page -->
+	
 	<main>
-		<p>Welcome to Forward Fitness Club. Our mission is to help clients meet their fitness and nutrition goals.</p>
 		
-		<P>If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
+			<p>Welcome to Forward Fitness Club. Our mission is to help clients meet their fitness and nutrition goals.</p>
+		<div class="mobile">
+			<h3>FREE One-Week Trial Membership!</h3>
+			<p><a href="tel:+18145559608">Call Us Today to Get Started</a></p>
+			<h4>Fitness Club Hours:</h4>
+			<p>	Moday-Thursday: 6:00am-6:00pm<br/>
+				Friday: 6:00am-4:00pm<br/>
+				Saturday: 8:00am-6:00pm<br/>
+				Sunday: Closed</p>
+		</div><!--ends mobile class-->	
 		
-		<p>We provide a FREE, one-week membership to experience the benefits of our equipment and facility. This one-week trial gives you ccomplete access to our equipment, trainig classes, and nutritional planning! Contact us today to start your free trial!</p>
-	
-	
-	
+		
+		
+		
+		<!-- desktop class-->
+		<div class="desktop">	
+			<P>If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
+			<p>We provide a FREE, one-week membership to experience the benefits of our equipment and facility. This one-week trial gives you ccmplete access to our equipment, training classes, and nutritional planning! Contact us today to start your free trial!</p>
+
+		<h1>Start Today!</H1>
+		
+		<figure>
+			<a class="lefta" href="class.html"><img src="images/group.png" alt="group fitness"></a>
+			<a  href="nutrition.html"><img src="images/nutrition.png" alt="good nutrition"></a>
+			<a  class="righta" href="contact.html"><img src="images/signup.png" alt="sign up icon"></a>
+			<span class="stretch"></span>
+		</figure>
+			
+		</div><!--end desktop-->
+		
 	</main>
 	
 	<!--use the footer area to add the footer content-->

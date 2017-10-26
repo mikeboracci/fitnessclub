@@ -1,82 +1,532 @@
 /*Style sheet created by Mike Boracci on 10/19/17*/
 
 /*Style for body specifies a background color*/
-body {
-	background-color: #ffff99;
-}
+body {background-color: #1D1D1C;}
 /*Style for container id centers the page and sets the element width*/
+/*sets images to fluid width */
+img {max-width: 100%;}
+/*Styles or mobile layout*/
 #container {
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
-/*Style for header specifies top and bottom margins, background color, rounded border, shadow, and alignment*/
-header {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	background-color: #ffffff;
-	border-radius: 10px;
-	box-shadow: 12px 12px 12px #404040;
-	text-align: center;
-}
-/*Style for nav specifies text properties, padding, margin, and borders*/
+/*Style for header specifies top margin, background color, rounded border, and center aligns content*/
+header {text-align: center;}
+/*Style for nav specifies text properties*/
 nav {
-	font-family: Georgia,"Times New Roman",serif;
+	font-family: Verdana, Arial, sans-serif;
 	font-size: 1.25em;
 	font-weight: bold;
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 20px;
-	border-top: 5px solid #ffffff;
-	border-bottom: 5px solid #ffffff;
+	margin-top: -1em;
 }
-/*Style for main specifies a block display, text properties, margins, padding, rounded border, and shadow*/
+/*Style specifies padding and margins for the unordered list*/
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+nav li {
+	background-color: #9D9D93;
+	border-radius: 1.5em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding:0.4em;
+}
+nav li a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+/* style displays the mobile class*/
+.mobile {display: inline;}
+/*Style hides the desktop class*/
+.desktop {display: none;}
+/*Style for main specifies a block display, text properties, margins, padding, rounded border, and border properties*/
 main {
 	display: block;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 1em;
-	margin-top: 20px;
-	margin-bottom:10px;
-	padding: 20px;
-	border-radius: 10px;
+	margin-top: 1em;
+	padding: 1em;
+	border-radius: 2em 0 2em 0;
 	background-color: #FFFFFF;
-	box-shadow: 12px 12px 12px #404040;
+	opacity: 0.85;
+}
+/* style for anchor elements within the main element*/
+main a {
+	background-color: transparent;
+	Border-radius: 1em;
+	margin-top: 2em;
+	color: #000000;
+	padding: 0.5em;
+	text-decoration: none;
 }
 /*Style for footer specifies font size, text alignment and top margin*/
 footer {
-	font-size: 10px;
-	margin-top: 20px;
+	font-size: 1em;
+	margin-top: 2em;
 	text-align: center;
-	
+	color: #FFFFFF;
 }
-
+/* style for anchor elements within the footer */
+footer a {
+		color: #FFFFFF;
+		text-decoration: none;
+}
+/*Style hides the tablet class*/
+.tablet {display: none;}
+/*Style specifies to not display the equip class*/
 .equip {
+	display: none;
+}
+
+/* default style for aside elements */
+	aside {
+	font-style: italic;
+}
+/* style rule for */
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}	
+/*style rule for label elements*/
+label {display: block;}
+/* style rule for unordered list within a form */
+form ul {list-style-type: none;}
+/* style rule for chkbx class */
+.chkbx {display: inline-block;} 
+
+/* media query for tablet viewport targets screen size with a minimum width of 660 pixels */
+/*---------------------------------------------------------------------------------------*/
+@media only screen and (min-width:660px){
+	/* style specifies a horizontal display for navigation lists */
+
+h2 {font-size:1.2em;}	
+nav li {
+	display: inline;
 	float: left;
-	padding-right: 20px;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 0;
+	padding-right: 0;
+	width: 18%;
+	white-space: nowrap;
+	border-radius: 0;
+	background-color: transparent;
 }
-ul{
-	margin-bottom: 50px;
-	list-style-position: inside;
+	/* style specifies clear and top margin properties for the main element */
+	
+main {
+		clear: left;
+		margin-top: -0.3em;
+		border-radius: 0;
+		overflow: auto;	
+		background-color:#1d1d1c;
+}
+main a {
+    background-color: transparent;
+    Border-radius: 0;
+    margin-top: 2em;
+    color: #FFFFFF;
+    padding: 0.5em;
+    text-decoration: none;
+}
+	
+	/* style specifies to hide the mobile class */
+.mobile {display: none;}
+	/* style specifies to display the desktop class */
+.desktop {display: inline;}
+	/* style specifies a display float and padding for the equip class */
+.equip {
+		display: inline;
+		float: left;
+		margin-right: 1.5em;
+}
+	/* style specifies a display list style and bottom margin for the items class */
+.items {display: block;list-style-position: inside;}
+	/* style specifies to display the tablet class */
+.tablet {
+		display: block;
+		margin-top: -3em;
+		margin-bottom: -1em;
+}
+	/* style specifies a font weight and top margin for description list terms */
+	dt {
+		font-weight: bold;
+		margin-top: 0.7em;
+	}
+	/* style for h1 element */
+h1{text-align: center;}
+	/* style for images within the figure element */
+figure img {
+		background-color: transparent;
+		display: inline;
+		height: 8em;
+		width: 28%;
+		margin: 1%;
+		padding: 1%;
+}
+	/* style for anchor elements within the figure element*/
+figure a {
+		background-color: transparent;
+		padding: 0;
+		text-decoration: none;
+}
+	
+	/* style specifies bottom tabbing for the seciton element */
+section {
+		padding-bottom: 3em;
+}
+	
+	/* style for h1 element within the section element */
+section h1 {
+		text-align: left;
+}
+	
+	/* style for the anchor elements within the section element */
+	
+section a {
+		background-color: transparent;
+		color: #1d1d1c;
+		font-weight: normal;
+		padding: 0;
+}
 	
 	
+	/* style for contact class */
+.contact {
+		background-color: transparent;
+		color: #1d1d1c;
+		padding: 0;
+		text-decoration: underline;
+}
+	/* stle for article element */
+article {
+		background-color: #C1D9CA;
+		float: left;
+		margin: 0.5%;
+		padding: 0.5%;
+		text-align: center;
+		width: 31%;
+}
+main article img {
+		border: solid 1px #1d1d1c;
+		margin-left: auto;
+		margin-right: auto;
+}
+	/* style for paragraph element contained within the main article element */
+main article p {
+		color: #000000;
+		margin-top:2%;
+		padding: 1%;
+		text-align: left;
+	}
+	/* style for unordered list items contained within the main element */
+main article ul {text-align: left;}
+	/* style for aside elements */
+aside {
+		background-color: #FFFFFF;
+		border-radius: 0 5em 5em 5em;
+		box-shadow: 1em 1em 1em 
+		padding: 1.5em;
+		margin: 1em;
+}
+table{
+		border: 0.1em solid #000000;
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+}
+	/* styles psecifies order and padding for th and td elements */
+th, td {
+		border: 1px solid black;
+		padding: 1em;
+		background-color: #9D9D93;
+	}
+	/* style for th element */
+th {
+		background-color: 1d1d1c;
+		color: #000000;
+		font-size: 1.2em;	
+}
+caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding-bottom: 1.5em;
+		padding-top: 1em;
 }
 
-dt{
-	font-weight: bold;
+	/* style rule for label elements*/
+label{ 
+	float:left;
+	padding-right: 0.5em;
+	text-align: right;	
+	width: 10em;
 }
-dd{
-	padding-bottom:20px;
+	/* style rule for btn class */
+.btn {
+	margin-left: 12em;
+}	
+
+	
 }
+/*---------------------end tablet media query-----------------------------------------------*/
 
 
 
+/*------------------------------------------------------------------------------------------*/
+/* media query for ladnscape tablet viewport targets screens with a minimum width of 830px  /*
+/*------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:830px){
+	/* style specifies a width for container */
+#container {background-color: #1D1D1C;}
+		
+	/* Style to left align the header */
+header {
+		text-align: left;
+}
+	/* Style to align the nav on the right, float, margin, and width */
+
+h2 {font-size:1.6em;}	
+	
+nav {
+		float: right;
+		margin-top: -7em;
+		margin-right: 3em;
+		margin-bottom: 0;
+		width: 65%;
+}
+	/* style specifies margin and padding for the unordered list within the nav */
+nav ul {
+		margin: 0;
+		padding-left: 0.50%;
+		padding-right: 0.50%;
+}
+nav li {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		width: 20%;
+}
+	/* style for nav links specifies display and padding */
+nav li a {
+		display: inline-block;
+		padding: 0.7em;
+		text-shadow: 0.2em 0.1em #3D3D35;
+}
+	/* style rules for pseudo-classes */
+nav li a:link{color: #FFFFFF;}
+nav li a:visited {color #CCCCFF;}
+nav li a:hover{color: #9D9D93;font-weight: bold;font-style:italic;}
+nav li a:active {color: blue;}
+main {background-color:#1D1D1C;}
+main p {
+		color: white;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+}
+	/* style applies height and opacity within figures*/
+figure above {text-align: justify; }
+figure img {
+		opacity: 0.7;
+		width: 250px;
+		height: 180px;
+		padding: 0;
+		display:inline-block;
+}
+	/* This is the buffer to allow images to fill a space evenly */
+	/*-----------------------------------------------------------*/
+.stretch {
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+}
+figure a {vertical-align: top;display: inline-block;}
+figure {
+		margin-top:90px;
+		margin-left: auto; 
+		margin-right: auto;
+		text-align: justify;
+	}
+	/*---------------------end image buffer----------------------*/
+	/*-----------------------------------------------------------*/
+			/* Style removes transparency on hover */
+figure img:hover{opacity:1;}
+	
+	/* style applies color to the h1 element */
+h1 {color: white;}
+	/*style specifies a gradient for the body element*/
+body {background-color: #1D1D1C;}
+	
+	/* Style specifies a background color margin and padding for footer element */
+footer {
+		background-color: #2A2A2A;
+		margin-top: -0.2em;
+		padding: 2em;
+}
+	
+	/* style specifies color and left margin for the section element */
+section {
+		color: #FFFFFF;
+		margin-bottom: 1em;
+		padding-bottom: 5em;
+}
+	
+section a {color: #FFFFFF;}
+	/* style for paragraph within the section element */
+section p {margin-left: 0;}
+	/* style for main h2*/
+main h2 {color: #FFFFFF;}
+	/* mStyle for contact */
+.contact {color: #FFFFFF;}
+	/* main article h2 styles */
+main article h2 {color: #000000;}
+	/* table styles */
+caption {color: #FFFFFF;}
+
+
+	/*style rule for label elements*/
+label{ 
+	float:left;
+	padding-right: 0.5em;
+	text-align: right;	
+	width: 10em;
+}	
+
+
+	/*Style rule for paragraph within form element */
+	
+
+
+/* ------------------------------end landscape tablet media query ----------------------------------- */
+/*-------------------------------------------------------------------------------------------*/
 
 
 
+/* media query for desktop viewport targets screens with a minimum width of 1200px /*
+/*------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
+@media only screen and (min-width:1200px){
+	/* style specifies a width for container */
+#container {background-color: #1D1D1C;}
+	/* Style to left align the header */
+header {text-align: left;}
+	/* Style to align the nav on the right, float, margin, and width */
+nav {
+		float: right;
+		margin-top: -7em;
+		margin-right: 3em;
+		margin-bottom: 0;
+		width: 65%;
+}
+	/* style specifies margin and padding for the unordered list within the nav */
+nav ul {
+		margin: 0;
+		padding-left: 0.50%;
+		padding-right: 0.50%;
+}
+nav li {
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		width: 20%;
+}
+	/* style for nav links specifies display and padding */
+nav li a {
+		display: inline-block;
+		padding: 0.7em;
+		text-shadow: 0.2em 0.1em #3D3D35;
+}
+	/* style rules for pseudo-classes */
+nav li a:link{color: #FFFFFF;}
+nav li a:visited {color #CCCCFF;}
+nav li a:hover{color: #9D9D93;font-weight: bold;font-style:italic;}
+nav li a:active {color: blue;}
+main {background-color:#1D1D1C;}
+main p {
+		color: white;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+}
+	
+		/* This is the buffer to allow images to fill a space evenly */
+	/*-----------------------------------------------------------*/
+.stretch {
+		width: 100%;
+		display: inline-block;
+		font-size: 0;
+		line-height: 0;
+}
+figure a {
+		vertical-align: top;
+		display: inline-block;
+		margin-left: auto; 
+		margin-right: auto;
+}
+.lefta{padding-left: 10%;}
+.righta{padding-right: 10%;}
+figure {
+		margin-top:40px;
+		margin-left: auto; 
+		margin-right: auto;
+		text-align: justify;
+}
+	/*---------------------end image buffer----------------------*/
+	/*-----------------------------------------------------------*/
+	
+	/* style applies height and opacity within figures*/
+figure img {
+		height: 15em;
+		opacity: 0.7;
+		width: 300px;
+}
+	/* Style removes transparency on hover */
+figure img:hover{opacity:1;}
+	/* style applies color to the h1 element */
+h1 {color: white;}
+	/*style specifies a gradient for the body element*/
+body {background-color: #1D1D1C;}
+	/* Style specifies a background color margin and padding for footer element */
+footer {
+		background-color: #2A2A2A;
+		margin-top: -0.2em;
+		padding: 2em;
+}
+	/* style specifies color and left margin for the section element */
+section {
+		color: #FFFFFF;
+		margin-bottom: 1em;
+		padding-bottom: 5em;
+}
+section a {color: #FFFFFF;}
+	/* style for paragraph within the section element */
+section p {margin-left: 0;}
+	/* style for main h2*/
+main h2 {color: #FFFFFF;}
+	/* mStyle for contact */
+.contact {color: #FFFFFF;}
+	/* main article h2 styles */
+main article h2 {color: #000000;}
+	/* Style for table element*/
+table{width: 85%;}
+	/* styles psecifies order and padding for th and td elements */
+	
+th, td {
+		background-color: #9D9D93;
+		font-weight: 300;
+}
+	/* style for th element */
+th {
+		background-color: lightgrey;
+		color: #FFFFFF;
+		font-size: 1.2em;	
+}
+	
+}	
+/* ------------------------------end desktop media query ----------------------------------- */
